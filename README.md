@@ -31,15 +31,19 @@ Power BI (Transformação e Visualização)
 🔹 1. Criação da Instância MySQL na Azure
 Provisionamento do banco de dados MySQL na plataforma Azure
 Configuração inicial do servidor
+
 🔹 2. Configuração de Acesso
 Criação de regra de firewall para permitir acesso externo
 Teste de conexão via Cloud Shell
+
 🔹 3. Conexão com MySQL Workbench
 Conexão ao banco utilizando cliente gráfico
 Validação da estrutura da base de dados
+
 🔹 4. Importação dos Dados
 Criação do banco de dados a partir de scripts disponíveis
 Inserção de dados nas tabelas
+
 🔹 5. Integração com Power BI
 Conexão do Power BI ao banco MySQL na Azure
 Importação das tabelas para análise
