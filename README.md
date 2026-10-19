@@ -9,12 +9,15 @@ Este projeto tem como objetivo demonstrar a integração de dados entre o MySQL 
 O desafio simula um cenário real de engenharia e análise de dados, envolvendo desde a criação da infraestrutura em nuvem até a modelagem dos dados para visualização.
 
 🎯 Objetivos
+
 Criar uma instância de banco de dados MySQL na Azure
 Importar uma base de dados existente
 Integrar o banco de dados ao Power BI
 Identificar e corrigir problemas na base de dados
 Realizar transformações para análise eficiente
+
 🧱 Arquitetura do Projeto
+
 Azure MySQL Database
         │
         ▼
@@ -22,7 +25,9 @@ MySQL Workbench / Cloud Shell
         │
         ▼
 Power BI (Transformação e Visualização)
+
 🚀 Etapas do Desenvolvimento
+
 🔹 1. Criação da Instância MySQL na Azure
 Provisionamento do banco de dados MySQL na plataforma Azure
 Configuração inicial do servidor
@@ -38,6 +43,7 @@ Inserção de dados nas tabelas
 🔹 5. Integração com Power BI
 Conexão do Power BI ao banco MySQL na Azure
 Importação das tabelas para análise
+
 🔧 Transformação dos Dados (Power BI)
 
 Durante o processo de ETL (Extração, Transformação e Carga), foram realizadas as seguintes etapas:
@@ -58,7 +64,9 @@ Ajuste de dados inconsistentes (ex: horas de projetos)
 Mesclagem das tabelas employee e department
 Criação de tabela de colaboradores com nome do departamento
 Junção entre colaboradores e seus respectivos gerentes
+
 🧠 Query SQL utilizada (exemplo):
+
 SELECT 
     e.Fname,
     e.Lname,
@@ -68,10 +76,12 @@ SELECT
 FROM employee e
 LEFT JOIN department d ON e.Dno = d.Dnumber
 LEFT JOIN employee m ON e.Super_ssn = m.Ssn;
+
 🔄 Transformações Adicionais
 Criação de coluna de nome completo (Nome + Sobrenome)
 Combinação de Departamento + Localização
 Agrupamento para análise de quantidade de colaboradores por gerente
+
 📊 Modelagem (Visão Futuro - Modelo Estrela)
 
 A junção entre departamento e localização foi realizada para garantir unicidade e facilitar a futura implementação de um modelo estrela, melhorando a performance e organização das análises.
@@ -89,6 +99,7 @@ Neste projeto, utilizamos Mesclar pois queremos enriquecer os dados existentes, 
 Base de dados tratada e consistente
 Relatórios no Power BI com dados confiáveis
 Melhor compreensão da estrutura organizacional (colaboradores, gerentes, departamentos)
+
 🛠️ Tecnologias Utilizadas
 ☁️ Microsoft Azure (MySQL Database)
 🗄️ MySQL
@@ -100,6 +111,7 @@ Melhor compreensão da estrutura organizacional (colaboradores, gerentes, depart
 /scripts
 /powerbi
 /README.md
+
 👨‍💻 Autor
 
 Projeto desenvolvido por Iacer Duarte
